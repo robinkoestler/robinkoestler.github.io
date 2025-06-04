@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<!--
+	Transitive by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Robin Köstler</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo"><a href="index.html">Robin Köstler's personal page<span></span></a></div>
+		<a href="#menu" class="toggle"><span>Menu</span></a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Anki/index.html">Anki Blog</a></li>
+			<li><a href="books/index.html">Books</a></li>
+			<li><a href="#">Music</a></li>
+		</ul>
+	</nav>
+
+	<!-- Banner -->
+	<!--
+			To use a video as your background, set data-video to the name of your video without
+			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+			formats to work correctly.
+		-->
+	<section id="banner" data-video="images/banner">
+		<div class="inner">
+			<p>I work on fully homomorphic encryption at the <a
+					href="https://wwwfr.uni.lu/snt/people/robin_koestler">University of Luxembourg</a>.<br />
+				<br />
+				<a href="#one" class="button special scrolly">Work in Academia</a>
+				<a href="#two" class="button special scrolly">Special interests</a>
+				<a href="#four" class="button special scrolly">Contact Information</a>
+			</p>
+		</div>
+	</section>
+
+	<!-- One -->
+	<section id="one" class="wrapper style2">
+		<div class="inner">
+			<div>
+				<div class="box">
+					<!-- <div class="image fit">
+								<img src="images/pic01.jpg" alt="" />
+							</div> -->
+					<div class="content">
+						<header class="align-center">
+							<h2>Work in Cryptography</h2>
+							<p>Currently, I am a Ph.D. student in the <a
+									href="http://www.crypto-uni.lu/index.html">Applied Crypto Group</a> at the <a
+									href="https://wwwen.uni.lu/">University of Luxembourg</a> under the supervision of
+								<a href="http://www.crypto-uni.lu/jscoron/index.html">Jean-Sébastien Coron</a>.
+							</p>
+						</header>
+						<hr />
+						<p>My research interests are in the area of cryptography, in particular in the design and
+							implementation of cryptographic protocols and algorithms.
+							I am currently working on <a
+								href="https://en.wikipedia.org/wiki/Homomorphic_encryption">fully homomorphic encryption
+								(FHE)</a>, which allows to perform arbitrary computations on encrypted data.
+							My goal is to improve the efficiency of the FHE bootstrapping, which is the pivotal
+							procedure due to which FHE still remains not-so-much practical.</p>
+						<p> I did <a
+								href="https://robinkoestler.github.io/A-survey-on-modern-fully-homomorphic-encryption">a
+								survey on modern fully homomorphic encryption in my master's thesis</a>, where I
+							implemented and analysed the general bootstrapping approach presented in <a
+								href="https://eprint.iacr.org/2021/691.pdf">this paper</a> (2021). </p>
+						<h3>Current branch of work: Fast bootstrappings for CKKS</h3>
+						<div style="display: flex; gap: 2rem; align-items: flex-start;">
+							<div style="flex: 1;">
+								<p>
+									For <a href="https://eprint.iacr.org/2016/421">CKKS</a>, a FHE scheme for
+									approximate computations, Jean-Sébastien Coron and I have
+									published a method to improve the latency of the bootstrapping subroutine in the
+									case of a
+									small number of slots (i.e. the number of data slots for parallel computations).
+									The paper (SPRU) is available <a href="https://eprint.iacr.org/2025/651">here</a>,
+									and will soon
+									be published.
+									By using roots of unity, it constitutes a novel approach to a small family of
+									existing bootstrapping equations, and together with the concurrent work of <a
+										href="https://eprint.iacr.org/2025/784">this paper (SHIP)</a>, it is among the
+									most promising schemes towards practical FHE for Artificial Intelligence.
+									My proof-of-concept implementation is available <a
+										href="https://github.com/robinkoestler/spru-fhe">here</a>.
+									It is written in <a href="https://github.com/sagemath/sage">SageMath</a>, which
+									mixes Python and C++ (through the <a href="https://libntl.org/NTL">NTL</a> library),
+									and thus favors readability over performance.
+									A more efficient open-source implementation by Jean-Sébastien Coron based on the <a
+										href="https://github.com/openfheorg/openfhe-development">OpenFHE</a> library in
+									C++ is available <a href="https://github.com/coron/spru_boot">here</a>.
+									Our method has been also already improved by the work of Jean-Sébastien Coron and <a
+										href="https://github.com/se-tim">Tim Seuré</a>, who have published the <a
+										href="https://eprint.iacr.org/2025/886">PaCo bootstrapping paper</a>.
+									As of May 2025, it remains exciting to see how the field of FHE will evolve in the
+									next years.
+									The figure on the right shows the performance of SPRU vs. CKKS depending on the
+									number of slots.
+								</p>
+							</div>
+							<div style="flex: 1;">
+								<img src="images/CKKSvsSPRU.png" alt="Bootstrapping performance"
+									style="width: 100%; height: auto;" />
+							</div>
+						</div>
+						<h3>Short Curriculum vitae</h3>
+						<ul>
+							<li>2016: A-levels at the <a href="https://www.wggselb.de/wp/">WGG Selb</a></li>
+							<li>2020: B.Sc. in mathematics at the <a href="https://www.uni-bayreuth.de/en">University of
+									Bayreuth</a> under the supervision of <a
+									href="http://www.mathe2.uni-bayreuth.de/stoll/">Michael Stoll</a></li>
+							<li>2022: M.Sc. in mathematics at the <a href="https://uni-freiburg.de/en/"
+									onclick="openInNewBackgroundTab(event)">University of Freiburg</a> under the
+								supervision of <a href="https://math.commelin.net/">Johannes Commelin</a></li>
+							<li>2023-current: Ph.D. in Computer Science at the <a
+									href="https://www.uni.lu/en">University of Luxembourg</a> under the supervision of
+								<a href="http://www.crypto-uni.lu/jscoron/index.html">Jean-Sébastien Coron</a></li>
+						</ul>
+						<h3>Presency at:</h3>
+						<ul>
+							<li><a href="https://crypto.stackexchange.com/users/109673/the-dice-man">StackOverflow for
+									Cryptography</a></li>
+							<li><a href="https://github.com/robinkoestler">GitHub</a></li>
+							<li><a href="https://www.linkedin.com/in/robinkoestler/">LinkedIn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="wrapper style3">
+		<div class="inner">
+			<div class="content">
+				<header class="align-center">
+					<h2>Special interests</h2>
+				</header>
+				<hr />
+			</div>
+
+			<div id="flexgrid">
+				<div>
+					<header>
+						<h3>Music</h3>
+					</header>
+					<p>I'm a passionate musician, playing guitar and piano.</p>
+					<ul class="actions">
+						<li><a href="#" class="button alt">Explore my musical journey</a></li>
+					</ul>
+				</div>
+				<div>
+					<header>
+						<h3>Anki</h3>
+					</header>
+					<p><b><a href="https://apps.ankiweb.net/">Anki</a></b> is a powerful tool for efficiently learning
+						flashcards, i.e. any type of information that is digestible.</p>
+					<ul class="actions">
+						<li><a href="Anki/index.html" class="button alt">Discover my blog</a></li>
+					</ul>
+				</div>
+				<div>
+					<header>
+						<h3>Miscellaneous</h3>
+					</header>
+					<ul class="actions">
+						<li><a href="books/index.html" class="button alt">Multilingual book corner</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<hr />
+			</div>
+		</div>
+	</section>
+
+	<!-- Four -->
+	<section id="four" class="wrapper style3">
+		<div class="inner">
+
+			<header class="align-center">
+				<h2>Contact Information</h2>
+				<p>firstname.lastname@uni.lu</p>
+			</header>
+
+		</div>
+	</section>
+
+	<div class="copyright">
+		<br Powered by: <a href="https://templated.co/">Templated.co</a>.
+		<br>
+		All pictures are copyright of Robin Köstler unless stated otherwise.
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<!-- usage: onclick="openInNewBackgroundTab(event)" -->
+	<script>
+		function openInNewBackgroundTab(event) {
+			event.preventDefault(); // Prevents the default link behavior
+			var url = event.target.href;
+			var newTab = window.open(url, '_blank');
+			newTab.blur(); // Move the focus away from the new tab
+			window.focus(); // Return the focus to the current page
+		}
+	</script>
+</body>
+
+</html>
