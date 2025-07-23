@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Favorite Books & Quotes - Robin Köstler</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../books/styles.css" />
+    <link rel="stylesheet" href="quotes.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Favorite Quotes</h1>
+        <p>A curated collection of meaningful quotes that have left a lasting impression on me.</p>
+    </header>
+
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search quotes by tags or content..." />
+            <button id="clearSearch">Clear</button>
+        </div>
+        <div class="tag-filter">
+            <span class="filter-label">Filter by tags:</span>
+            <div class="tag-buttons" id="tagButtons">
+                <!-- Tags will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="quotes-container" id="quotesContainer">
+            <!-- Quotes will be populated by JavaScript -->
+        </div>
+    </main>
+
+            <a href="../books/index.html" class="back-link">← Back to Book Corner</a>
+
+    <script src="quotes.js"></script>
+</body>
+
+</html> 
