@@ -32,6 +32,13 @@ const quotes = [
         comment: "The quote exhibits one central dilemma of life: No matter how reasonable a decision is, taking a deviant path may be more rewarding."
     },
 
+    {
+        text: "If you want to walk fast, walk alone. If you want to walk far, walk together.",
+        author: "African proverb",
+        tags: ["Life advice"],
+        comment: "A bit too vague and contradictory for concrete advice, but I like the idea of fusing people's strengths."
+    },
+
 ];
 
 // Get all unique tags from quotes
