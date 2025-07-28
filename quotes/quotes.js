@@ -39,6 +39,13 @@ const quotes = [
         comment: "A bit too vague and contradictory for concrete advice, but I like the idea of fusing people's strengths."
     },
 
+    {
+        text: "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. (La perfection est atteinte, non pas lorsqu'il n'y a plus rien à ajouter, mais lorsqu'il n'y a plus rien à retirer.)",
+        author: "Antoine de Saint-Exupéry",
+        tags: ["Life advice", "Perfectionism"],
+        comment: "A great quote for design problems, almost everything can benefit from simplifications. Sometimes, the process of honing a product is not regarded as valuable as it should be."
+    },
+
 ];
 
 // Get all unique tags from quotes
